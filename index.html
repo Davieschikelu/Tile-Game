@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Memory game</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <h1 class="text-xl font-semibold text-center mb-3">Memory / Guessing Game</h1>
+    <div class="shadow-lg rounded bg-gray-200 w-100">
+    <div class="flex justify-between items-center p-2">
+        <h1 id="moves" class="text-sm font-semibold">Moves Made: </h1>
+        <h1 id="numGuess" class="text-sm font-semibold">5</h1>
+        <h1 id="points" class="text-sm font-semibold">Points Scored</h1>
+    </div>
+
+    <div id="tGrid" class="grid grid-cols-6"> 
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div><div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+        <div class="p-4 cursor-pointer bg-white text-white border-1 border-gray-100 hover:bg-gray-200 transition delay ease-in-out">
+          <p class="text-center font-semibold">0</p>
+        </div>
+    </div>
+
+    <div id="clickArea" class="flex justify-center p-2">
+        <button onclick="startGame()" class="cursor pointer">Start</button>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
