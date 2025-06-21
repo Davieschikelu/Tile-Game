@@ -15,8 +15,8 @@ points.innerHTML = `Points: ${score}`
 
  function startGame() {
 clickArea.className = "grid grid-cols-2"
-clickArea.innerHTML = `<button onclick="restartGame()" class="text-center border-r-1  p-2 cursor pointer border-gray-300 hover:bg-gray-300 transition delay ease-in-out">Restart Game</button>
-<button onclick="playAgain()" class="text-center border-l-1  p-2 border-gray-300 cursor pointer hover:bg-gray-300 transition delay ease-in-out">Play Again</button>`
+clickArea.innerHTML = `<button onclick="restartGame()" class="text-center border-r-1  p-2 cursor pointer border-white hover:bg-sky-500 transition delay ease-in-out text-white">Restart Game</button>
+<button onclick="playAgain()" class="text-center border-l-1  p-2 border-gray-300 cursor pointer text-white hover:bg-sky-500 transition delay ease-in-out">Play Again</button>`
 let randomArrayIndex = Math.floor(Math.random() * values.length);
     targetValueToGuess = values[randomArrayIndex]; 
     numGuess.innerHTML = targetValueToGuess;
@@ -33,7 +33,7 @@ let tileElements = values.map(element => {
      tileElement.innerHTML = `<p class="text-center font-semibold">${element}</p>`
      tileElement.onclick = () => {
       tileElement.classList.remove("text-white")
-      tileElement.classList.add("bg-gray-200")
+      tileElement.classList.add("text-sky-500")
       currentIndex++
       movesMade.innerHTML = `Moves Made: ${currentIndex}`
       selectAnswer(element,targetValueToGuess)
@@ -75,9 +75,10 @@ function nextQuestion() {
     startGame()
  }
  function playAgain(){
-    // currentIndex = 0;
+     currentIndex = 0;
     // score++
     movesMade.innerHTML = `Moves Made: ${currentIndex}`
     // points.innerHTML = `Points: ${score++}`
     startGame()
  }
+ 
